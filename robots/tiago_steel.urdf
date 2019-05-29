@@ -562,7 +562,7 @@
     <dynamics damping="100"/>
     <safety_controller k_position="0" k_velocity="10" soft_lower_limit="-0.005" soft_upper_limit="0.005"/>
   </joint>
-  <joint name="wheel_right_joint" type="revolute">
+  <joint name="wheel_right_joint" type="fixed">
     <parent link="suspension_right_link"/>
     <child link="wheel_right_link"/>
     <origin rpy="-1.57079632679 0 0" xyz="0 -0.2022 0"/>
@@ -630,7 +630,7 @@
     <dynamics damping="100"/>
     <safety_controller k_position="0" k_velocity="10" soft_lower_limit="-0.005" soft_upper_limit="0.005"/>
   </joint>
-  <joint name="wheel_left_joint" type="revolute">
+  <joint name="wheel_left_joint" type="fixed">
     <parent link="suspension_left_link"/>
     <child link="wheel_left_link"/>
     <origin rpy="-1.57079632679 0 0" xyz="0 0.2022 0"/>
@@ -1775,7 +1775,7 @@
   <gazebo reference="gripper_right_finger_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <joint name="gripper_right_finger_joint" type="prismatic">
+  <joint name="gripper_right_finger_joint" type="fixed">
     <parent link="gripper_link"/>
     <child link="gripper_right_finger_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.034 0.00000 0.00000"/>
