@@ -1044,23 +1044,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/torso/torso_lift_collision_core.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/torso/torso_lift_with_arm.stl" scale="1 1 1"/>
       </geometry>
-      <material name="LightGrey"/>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://tiago_description/meshes/torso/torso_lift_collision_shoulder.dae" scale="1 1 1"/>
-      </geometry>
-      <material name="LightGrey"/>
-    </collision>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://tiago_description/meshes/torso/torso_lift_collision_neck.dae" scale="1 1 1"/>
-      </geometry>
-      <material name="LightGrey"/>
+      <material name="White"/>
     </collision>
   </link>
   <joint name="torso_lift_joint" type="prismatic">
@@ -1097,9 +1083,9 @@
       <material name="White"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0.0" xyz="0.0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/head/head_1_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/head/head_1.stl" scale="1 1 1"/>
       </geometry>
       <material name="White"/>
     </collision>
@@ -1147,8 +1133,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/head/head_2_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/head/head_2.stl" scale="1 1 1"/>
       </geometry>
+      <material name="White"/>
     </collision>
   </link>
   <joint name="head_2_joint" type="revolute">
@@ -1183,23 +1170,6 @@
       <mass value="0.21970000000"/>
       <inertia ixx="0.00000429247" ixy="0.00000000000" ixz="0.00000002565" iyy="0.00000008027" iyz="0.00000000000" izz="0.00000427339"/>
     </inertial>
-    <!--
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://tiago_description/meshes/sensors/xtion_pro_live/xtion_pro_live.dae" />
-        </geometry>
-        <material name="Grey">
-          <color rgba="0.5 0.5 0.5 1"/>
-        </material>
-      </visual>
-      <collision>
-        <origin xyz="-0.01 0.0025 0" rpy="0 0 0"/>
-        <geometry>
-          <box size="0.04 0.185 0.03"/>
-        </geometry>
-      </collision>
-      -->
   </link>
   <joint name="xtion_optical_joint" type="fixed">
     <origin rpy="-1.57079632679 0.0 -1.57079632679" xyz="0 0 0"/>
@@ -1319,8 +1289,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_1_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_1.stl" scale="1 1 1"/>
       </geometry>
+      <material name="White"/>
     </collision>
   </link>
   <joint name="arm_1_joint" type="revolute">
@@ -1350,8 +1321,9 @@
       <!-- <origin xyz="0 0 0" rpy="${180 * deg_to_rad} ${0 * deg_to_rad} ${-90 * deg_to_rad}" /> -->
       <origin rpy="0.0 0.0 0.0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_2_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_2.stl" scale="1 1 1"/>
       </geometry>
+      <material name="DarkGrey"/>
     </collision>
   </link>
   <joint name="arm_2_joint" type="revolute">
@@ -1379,8 +1351,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_3_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_3.stl" scale="1 1 1"/>
       </geometry>
+      <material name="DarkGrey"/>
     </collision>
   </link>
   <joint name="arm_3_joint" type="revolute">
@@ -1411,8 +1384,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_4_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_4.stl" scale="1 1 1"/>
       </geometry>
+      <material name="DarkGrey"/>
     </collision>
   </link>
   <joint name="arm_4_joint" type="revolute">
@@ -1475,8 +1449,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_5_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_5.stl" scale="1 1 1"/>
       </geometry>
+      <material name="LightGrey"/>
     </collision>
   </link>
   <joint name="arm_5_joint" type="revolute">
@@ -1504,8 +1479,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://tiago_description/meshes/arm/arm_6_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://tiago_description/meshes/arm/arm_6.stl" scale="1 1 1"/>
       </geometry>
+      <material name="LightGrey"/>
     </collision>
   </link>
   <joint name="arm_6_joint" type="revolute">
@@ -1698,8 +1674,9 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_link_collision.dae" scale="1 1 1"/>
+        <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_link.stl" scale="1 1 1"/>
       </geometry>
+      <material name="White"/>
     </collision>
   </link>
   <!--
@@ -1726,12 +1703,11 @@
       <material name="Black"/>
     </visual>
     <collision>
-      <!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
-      <origin rpy="0 0 0" xyz="0.043 0 -0.12"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <!-- <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_finger_link_collision.dae" scale="1 1 1"/> -->
-        <box size="0.022 0.03 0.07"/>
+        <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_finger_link.stl" scale="1 1 1"/>
       </geometry>
+      <material name="Black"/>
     </collision>
   </link>
   <gazebo reference="gripper_left_finger_link">
@@ -1764,12 +1740,11 @@
       <material name="Black"/>
     </visual>
     <collision>
-      <!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
-      <origin rpy="0 0 0" xyz="-0.043 0 -0.12"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <!-- <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_finger_link_collision.dae" scale="-1 -1 1"/> -->
-        <box size="0.022 0.03 0.07"/>
+        <mesh filename="package://pal_wsg_gripper_description/meshes/gripper_finger_link.stl" scale="-1 -1 1"/>
       </geometry>
+      <material name="Black"/>
     </collision>
   </link>
   <gazebo reference="gripper_right_finger_link">
