@@ -374,11 +374,10 @@
       <material name="White"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 .058"/>
       <geometry>
-        <mesh filename="package://pmb2_description/meshes/base/high_resolution/base_collision.stl"/>
+        <cylinder length="0.27" radius=".27" />
       </geometry>
-      <material name="White"/>
     </collision>
   </link>
   <gazebo reference="base_link">
