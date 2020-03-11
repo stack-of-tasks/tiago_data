@@ -1,0 +1,6 @@
+<robot name="tiago">
+  <gripper name="gripper" clearance="0.05">
+    <position xyz="0 0 -0.12" rpy="1.5707963267948966 1.5707963267948966 0"/>
+    <link name="gripper_link" />
+  </gripper>
+</robot>
