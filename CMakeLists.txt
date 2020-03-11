@@ -1,26 +1,24 @@
-cmake_minimum_required(VERSION 2.8.3)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 
+# Project properties
+SET(PROJECT_ORG stack-of-tasks)
+SET(PROJECT_NAME tiago_data)
+SET(PROJECT_DESCRIPTION "SoT data for Tiago")
+SET(PROJECT_URL "http://github.com/${PROJECT_ORG}/${PROJECT_NAME}")
 
-include(cmake/base.cmake)
-include(cmake/ros.cmake)
+# Project configuration
+SET(PROJECT_USE_CMAKE_EXPORT TRUE)
 
-set(PROJECT_NAME tiago_data)
-set(PROJECT_DESCRIPTION SoT data for Tiago)
-set(PROJECT_URL "http://github.com/stack-of-tasks/tiago_data")
+# JRL-cmakemodule setup
+INCLUDE(cmake/base.cmake)
 
-setup_project()
+# Project definition
+COMPUTE_PROJECT_ARGS(PROJECT_ARGS LANGUAGES CXX)
+PROJECT(${PROJECT_NAME} ${PROJECT_ARGS})
 
-find_package(catkin REQUIRED)
+ADD_LIBRARY(${PROJECT_NAME} INTERFACE)
+INSTALL(TARGETS ${PROJECT_NAME} EXPORT ${TARGETS_EXPORT_NAME} DESTINATION lib)
 
-catkin_package()
-
-foreach(dir gazebo Media meshes robots urdf config)
-    install(DIRECTORY ${dir}/
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)
-
-#############
-## Testing ##
-#############
-
-setup_project_finalize()
+FOREACH(dir gazebo Media meshes robots urdf config)
+  INSTALL(DIRECTORY ${dir} DESTINATION share/${PROJECT_NAME})
+ENDFOREACH(dir)
