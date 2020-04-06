@@ -2,6 +2,9 @@
   <gripper clearance="0.09" name="gripper">
     <position xyz="0.13 0.038 0" />
     <link name="wrist_ft_tool_link" />
+    <joint name="hand_thumb_joint"/>
+    <joint name="hand_index_joint"/>
+    <joint name="hand_mrl_joint"  />
   </gripper>
 
   <disable_collisions link1="torso_fixed_link" link2="arm_2_link" reason="User defined" />
