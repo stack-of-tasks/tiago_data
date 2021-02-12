@@ -1118,6 +1118,8 @@
   <disable_collisions link1="hand_thumb_flex_2_link" link2="hand_thumb_link" reason="User defined" />
   <disable_collisions link1="hand_thumb_flex_2_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="hand_thumb_link" link2="hand_safety_box" reason="User defined" />
+  <disable_collisions link1="arm_5_link" link2="wrist_ft_link" reason="User defined" />
+  <disable_collisions link1="arm_5_link" link2="wrist_ft_tool_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="wrist_ft_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="wrist_ft_tool_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="hand_safety_box" reason="User defined" />

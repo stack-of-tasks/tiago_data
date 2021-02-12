@@ -101,5 +101,6 @@
   <disable_collisions link1="arm_tool_link" link2="gripper_left_finger_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="gripper_right_finger_link" reason="User defined" />
   <disable_collisions link1="arm_5_link" link2="gripper_link" reason="User defined" />
+  <disable_collisions link1="arm_5_link" link2="wrist_ft_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="wrist_ft_link" reason="User defined" />
 </robot>
