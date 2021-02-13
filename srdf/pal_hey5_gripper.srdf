@@ -341,6 +341,7 @@
   <disable_collisions link1="caster_front_right_2_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="caster_front_right_2_link" link2="head_1_link" reason="User defined" />
   <disable_collisions link1="caster_front_right_2_link" link2="head_2_link" reason="User defined" />
+  <disable_collisions link1="wrist_ft_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="wrist_ft_link" link2="hand_index_abd_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_link" link2="hand_index_virtual_1_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_link" link2="hand_index_flex_1_link" reason="User defined" />
@@ -377,6 +378,7 @@
   <disable_collisions link1="wrist_ft_link" link2="hand_thumb_virtual_2_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_link" link2="hand_thumb_flex_2_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_link" link2="hand_thumb_link" reason="User defined" />
+  <disable_collisions link1="wrist_ft_tool_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_index_abd_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_index_virtual_1_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_index_flex_1_link" reason="User defined" />
@@ -413,6 +415,7 @@
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_thumb_virtual_2_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_thumb_flex_2_link" reason="User defined" />
   <disable_collisions link1="wrist_ft_tool_link" link2="hand_thumb_link" reason="User defined" />
+  <disable_collisions link1="hand_palm_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="hand_palm_link" link2="hand_index_abd_link" reason="User defined" />
   <disable_collisions link1="hand_palm_link" link2="hand_index_virtual_1_link" reason="User defined" />
   <disable_collisions link1="hand_palm_link" link2="hand_index_flex_1_link" reason="User defined" />
@@ -1115,7 +1118,11 @@
   <disable_collisions link1="hand_thumb_flex_2_link" link2="hand_thumb_link" reason="User defined" />
   <disable_collisions link1="hand_thumb_flex_2_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="hand_thumb_link" link2="hand_safety_box" reason="User defined" />
+  <disable_collisions link1="arm_5_link" link2="wrist_ft_link" reason="User defined" />
+  <disable_collisions link1="arm_5_link" link2="wrist_ft_tool_link" reason="User defined" />
   <disable_collisions link1="arm_6_link" link2="wrist_ft_link" reason="User defined" />
+  <disable_collisions link1="arm_6_link" link2="wrist_ft_tool_link" reason="User defined" />
+  <disable_collisions link1="arm_6_link" link2="hand_safety_box" reason="User defined" />
   <disable_collisions link1="base_link" link2="hand_little_virtual_1_link" reason="User defined" />
   <disable_collisions link1="base_link" link2="hand_little_virtual_2_link" reason="User defined" />
   <disable_collisions link1="base_link" link2="hand_little_virtual_3_link" reason="User defined" />
